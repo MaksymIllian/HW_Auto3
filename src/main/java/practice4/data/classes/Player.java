@@ -1,4 +1,4 @@
-package practice3.data.classes;
+package practice4.data.classes;
 
 import org.apache.commons.lang3.RandomStringUtils;
 

@@ -1,6 +1,5 @@
-package practice3.tests;
+package practice4.tests;
 
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -8,10 +7,10 @@ import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import practice3.data.classes.Player;
-import practice3.pages.EditPlayerPage;
-import practice3.pages.LoginPage;
-import practice3.pages.PlayersPage;
+import practice4.data.classes.Player;
+import practice4.pages.EditPlayerPage;
+import practice4.pages.LoginPage;
+import practice4.pages.PlayersPage;
 
 import java.util.concurrent.TimeUnit;
 
