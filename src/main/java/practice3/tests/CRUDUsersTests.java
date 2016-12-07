@@ -76,7 +76,7 @@ public class CRUDUsersTests {
      * 7. Assert current title with expected title "Players"
      * 8. Assert current url with expected "http://80.92.229.236:81/Players"
      */
-    @Test
+    @Test(dependsOnMethods = { "createPositiveTest" })
     public void editPositiveTest() {
         loginPage.open();
         loginPage.login("admin","123");
@@ -100,7 +100,7 @@ public class CRUDUsersTests {
      * 7. Assert current title with expected title "Players"
      * 8. Assert current url with expected "http://80.92.229.236:81/Players"
      */
-    @Test
+    @Test (dependsOnMethods = { "editPositiveTest" })
     public void deletePositiveTest() {
         loginPage.open();
         loginPage.login("admin","123");
