@@ -19,11 +19,11 @@ import java.util.concurrent.TimeUnit;
  */
 public class CRUDUsersTests {
 
-    WebDriver driver;
-    LoginPage loginPage;
-    PlayersPage playersPage;
-    EditPlayerPage editPlayerPage;
-    Player player  = new Player();
+    private WebDriver driver;
+    private LoginPage loginPage;
+    private PlayersPage playersPage;
+    private EditPlayerPage editPlayerPage;
+    private Player player  = new Player();
 
     /**
      * 1. Create browser
@@ -75,7 +75,7 @@ public class CRUDUsersTests {
      * 7. Assert current title with expected title "Players"
      * 8. Assert current url with expected "http://80.92.229.236:81/Players"
      */
-    @Test(dependsOnMethods = { "createPositiveTest" })
+    @Test(dependsOnMethods = { "createPositiveTest"})
     public void editPositiveTest() {
         loginPage.open();
         loginPage.login("admin","123");
